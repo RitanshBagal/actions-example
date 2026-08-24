@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Welcome message
-        run: echo"Welcome to Github actions"
+        run: echo "Welcome to Github actions"
