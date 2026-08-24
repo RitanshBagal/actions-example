@@ -1,0 +1,20 @@
+name: Dev Workflow
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello World"
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Current Directory and User
+        run: |
+          echo "Current Directory: $(pwd)"
+          echo "Current User: $(whoami)"
