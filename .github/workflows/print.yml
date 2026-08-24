@@ -1,19 +1,20 @@
 name: Print world
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print Hello World
         run: echo "Hello World from GitHub Actions"
 
-  job2:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
