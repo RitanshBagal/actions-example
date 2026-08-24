@@ -2,9 +2,8 @@ name: Print world
 
 on:
   push:
-    branches: 
+    branches:
       - main
-
 
 jobs:
   job1:
@@ -12,9 +11,11 @@ jobs:
 
     steps:
       - name: Print Hello World
-        run: echo "Hello World from Github Actions"
+        run: echo "Hello World from GitHub Actions"
+
   job2:
     runs-on: ubuntu-latest
+
     steps:
       - name: Welcome message
-        run: echo "Welcome to Github actions"
+        run: echo "Welcome to GitHub Actions"
